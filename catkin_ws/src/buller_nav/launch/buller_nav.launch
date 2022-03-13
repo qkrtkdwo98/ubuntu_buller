@@ -1,0 +1,10 @@
+<launch>
+  <!-- MOTOR -->
+   <node pkg="rosserial_python" type="serial_node.py" args="/dev/ttyUSB0" name="serial_node"/>
+  
+  <!-- tf & odom pkg -->
+   <node pkg="buller_tf" type="tf_broadcaster" name="buller_tf_publisher"/>
+   <node pkg="buller_odom_publisher" type="buller_odom_publisher_node" name="buller_odom_publisher"/>
+
+</launch> 
+

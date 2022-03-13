@@ -1,0 +1,6 @@
+<launch>
+    <rosparam file="$(find hotword_detection)/param/initial_param.yaml" command="load" />
+    
+    <node name="listener" pkg="hotword_detection" type="infodata_subscriber" output="screen" />
+    <node name="talker" pkg="hotword_detection" type="Hotword_Detection.py" output="screen" />
+</launch>

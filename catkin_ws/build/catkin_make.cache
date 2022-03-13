@@ -1,0 +1,2 @@
+buller_description:buller_move:buller_nav:buller_odom_publisher:buller_start:buller_tf:ddynamic_reconfigure:hotword_detection:myahrs_driver:openslam_gmapping:realsense-ros/realsense2_camera:realsense-ros/realsense2_description:rplidar_ros:slam_gmapping/gmapping:slam_gmapping/slam_gmapping
+-DCATKIN_DEVEL_PREFIX=/home/psj/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/psj/catkin_ws/install -G Unix Makefiles

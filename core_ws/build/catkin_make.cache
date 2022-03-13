@@ -1,0 +1,2 @@
+buller_deliver_core
+-DCATKIN_DEVEL_PREFIX=/home/psj/core_ws/devel -DCMAKE_INSTALL_PREFIX=/home/psj/core_ws/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/psj/core_ws/install
+
+Name: buller_deliver_core
+Description: Description of buller_deliver_core
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
