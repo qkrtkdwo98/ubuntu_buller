@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/myahrs_driver.dir/src/myahrs_driver.cpp.o"
-  "/home/psj/catkin_ws/devel/lib/myahrs_driver/myahrs_driver.pdb"
-  "/home/psj/catkin_ws/devel/lib/myahrs_driver/myahrs_driver"
+  "/home/ubuntu/catkin_ws/devel/lib/myahrs_driver/myahrs_driver.pdb"
+  "/home/ubuntu/catkin_ws/devel/lib/myahrs_driver/myahrs_driver"
 )
 
 # Per-language clean rules from dependency scanning.

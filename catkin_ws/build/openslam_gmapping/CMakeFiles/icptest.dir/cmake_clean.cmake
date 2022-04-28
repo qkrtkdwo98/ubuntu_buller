@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/icptest.dir/scanmatcher/icptest.cpp.o"
-  "/home/psj/catkin_ws/devel/lib/openslam_gmapping/icptest.pdb"
-  "/home/psj/catkin_ws/devel/lib/openslam_gmapping/icptest"
+  "/home/ubuntu/catkin_ws/devel/lib/openslam_gmapping/icptest.pdb"
+  "/home/ubuntu/catkin_ws/devel/lib/openslam_gmapping/icptest"
 )
 
 # Per-language clean rules from dependency scanning.

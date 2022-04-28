@@ -112,7 +112,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.01
       Style: Squares
-      Topic: /scan
+      Topic: /buller2/scan
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
@@ -141,7 +141,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.08
       Style: Spheres
-      Topic: /mobile_base/sensors/bumper_pointcloud
+      Topic: /buller2/mobile_base/sensors/bumper_pointcloud
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
@@ -151,7 +151,7 @@ Visualization Manager:
       Draw Behind: false
       Enabled: true
       Name: Map
-      Topic: /map
+      Topic: /buller2/map
       Value: true
     - Class: rviz/Group
       Displays:
@@ -161,7 +161,7 @@ Visualization Manager:
           Draw Behind: true
           Enabled: true
           Name: Costmap
-          Topic: /move_base/global_costmap/costmap
+          Topic: /buller2/move_base/global_costmap/costmap
           Value: true
         - Alpha: 1
           Buffer Length: 1
@@ -169,7 +169,7 @@ Visualization Manager:
           Color: 255; 0; 0
           Enabled: true
           Name: Planner
-          Topic: /move_base/TrajectoryPlannerROS/global_plan
+          Topic: /buller2/move_base/TrajectoryPlannerROS/global_plan
           Value: true
       Enabled: true
       Name: Global Map
@@ -181,7 +181,7 @@ Visualization Manager:
           Draw Behind: false
           Enabled: true
           Name: Costmap
-          Topic: /move_base/local_costmap/costmap
+          Topic: /buller2/move_base/local_costmap/costmap
           Value: true
         - Alpha: 1
           Buffer Length: 1
@@ -189,7 +189,7 @@ Visualization Manager:
           Color: 0; 12; 255
           Enabled: true
           Name: Planner
-          Topic: /move_base/TrajectoryPlannerROS/local_plan
+          Topic: /buller2/move_base/TrajectoryPlannerROS/local_plan
           Value: true
       Enabled: true
       Name: Local Map
@@ -198,7 +198,7 @@ Visualization Manager:
       Color: 0; 192; 0
       Enabled: true
       Name: Amcl Particles
-      Topic: /particlecloud
+      Topic: /buller2/particlecloud
       Value: true
   Enabled: true
   Global Options:
@@ -212,9 +212,9 @@ Visualization Manager:
       Hide Inactive Objects: true
     - Class: rviz/Select
     - Class: rviz/SetInitialPose
-      Topic: /initialpose
+      Topic: /buller2/initialpose
     - Class: rviz/SetGoal
-      Topic: /move_base_simple/goal
+      Topic: /buller2/move_base_simple/goal
     - Class: rviz/Measure
   Value: true
   Views:

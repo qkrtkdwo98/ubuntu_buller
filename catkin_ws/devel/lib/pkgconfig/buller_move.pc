@@ -1,4 +1,4 @@
-prefix=/home/psj/catkin_ws/devel
+prefix=/home/ubuntu/catkin_ws/devel
 
 Name: buller_move
 Description: Description of buller_move

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sensor_range.dir/sensor/sensor_range/rangesensor.cpp.o"
   "CMakeFiles/sensor_range.dir/sensor/sensor_range/rangereading.cpp.o"
-  "/home/psj/catkin_ws/devel/lib/libsensor_range.pdb"
-  "/home/psj/catkin_ws/devel/lib/libsensor_range.so"
+  "/home/ubuntu/catkin_ws/devel/lib/libsensor_range.pdb"
+  "/home/ubuntu/catkin_ws/devel/lib/libsensor_range.so"
 )
 
 # Per-language clean rules from dependency scanning.

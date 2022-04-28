@@ -56,7 +56,7 @@ int main(int argc, char** argv) {
     last_time = ros::Time::now();
 
     // Rate is 10Hz
-    ros::Rate r(20.0);
+    ros::Rate r(5.0);
 	while (n.ok()){
         //Callback function
         ros::spinOnce();
@@ -66,11 +66,11 @@ int main(int argc, char** argv) {
         encoder_sub = n.subscribe("/encoder_pulse", 10, encoder_pulseCallback);
         imu_sub = n.subscribe("/imu/data", 20, imu_Callback);
 
-        double vx =(56.4*encoder_pulse * pi * R) / (300*pulse * dec );
-	if(ang_vel>-0.045&&ang_vel<0.045)
+        double vx =(56.4*encoder_pulse * pi * R) / (630*pulse * dec );
+	if(ang_vel>-0.035&&ang_vel<0.035)
 		ang_vel=0;
         double vth = ang_vel;
-	//ROS_INFO("Angular Velocity: %.3lf", vx);
+        //ROS_INFO("Angular Velocity: %.3lf", vx);
 
         //compute odometry in a typical way given the velocities of the robot
         double dt = (current_time - last_time).toSec();
@@ -81,8 +81,7 @@ int main(int argc, char** argv) {
         x += delta_x;
         y += delta_y;
         th += delta_th;
-	//ROS_INFO("vx: %.3lf", vx);
-        ROS_INFO("angvel: %.3lf", ang_vel);
+	ROS_INFO("vx: %.3lf", vx);
         //since all odometry is 6DOF we'll need a quaternion created from yaw
         geometry_msgs::Quaternion odom_quat = tf::createQuaternionMsgFromYaw(th);
 
@@ -119,8 +118,6 @@ int main(int argc, char** argv) {
 
 		//publish the message
 		odom_pub.publish(odom);
-///
-                //sensor_pub.publish(msg);
 
 		last_time = current_time;
         r.sleep();

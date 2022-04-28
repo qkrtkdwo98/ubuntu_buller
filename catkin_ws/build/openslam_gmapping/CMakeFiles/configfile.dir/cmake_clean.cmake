@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/configfile.dir/configfile/configfile.cpp.o"
-  "/home/psj/catkin_ws/devel/lib/libconfigfile.pdb"
-  "/home/psj/catkin_ws/devel/lib/libconfigfile.so"
+  "/home/ubuntu/catkin_ws/devel/lib/libconfigfile.pdb"
+  "/home/ubuntu/catkin_ws/devel/lib/libconfigfile.so"
 )
 
 # Per-language clean rules from dependency scanning.

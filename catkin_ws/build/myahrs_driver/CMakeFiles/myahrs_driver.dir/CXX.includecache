@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/psj/catkin_ws/src/myahrs_driver/include/myahrs_driver/myahrs_plus.hpp
+/home/ubuntu/catkin_ws/src/myahrs_driver/include/myahrs_driver/myahrs_plus.hpp
 stdio.h
 -
 stdlib.h
@@ -52,7 +52,7 @@ termios.h
 sys/time.h
 -
 
-/home/psj/catkin_ws/src/myahrs_driver/src/myahrs_driver.cpp
+/home/ubuntu/catkin_ws/src/myahrs_driver/src/myahrs_driver.cpp
 myahrs_driver/myahrs_plus.hpp
 -
 ros/ros.h

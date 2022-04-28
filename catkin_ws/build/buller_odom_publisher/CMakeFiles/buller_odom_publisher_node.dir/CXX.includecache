@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/psj/catkin_ws/src/buller_odom_publisher/src/buller_odom_publisher_node.cpp
+/home/ubuntu/catkin_ws/src/buller_odom_publisher/src/buller_odom_publisher_node.cpp
 ros/ros.h
 -
 tf/transform_broadcaster.h
@@ -20,15 +20,15 @@ std_msgs/Float64.h
 sensor_msgs/Imu.h
 -
 
-/home/psj/catkin_ws/src/buller_odom_publisher/src/math_util.cpp
+/home/ubuntu/catkin_ws/src/buller_odom_publisher/src/math_util.cpp
 math_util.h
-/home/psj/catkin_ws/src/buller_odom_publisher/src/math_util.h
+/home/ubuntu/catkin_ws/src/buller_odom_publisher/src/math_util.h
 sys/time.h
 -
 unistd.h
 -
 
-/home/psj/catkin_ws/src/buller_odom_publisher/src/math_util.h
+/home/ubuntu/catkin_ws/src/buller_odom_publisher/src/math_util.h
 stdlib.h
 -
 math.h

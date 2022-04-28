@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sensor_odometry.dir/sensor/sensor_odometry/odometrysensor.cpp.o"
   "CMakeFiles/sensor_odometry.dir/sensor/sensor_odometry/odometryreading.cpp.o"
-  "/home/psj/catkin_ws/devel/lib/libsensor_odometry.pdb"
-  "/home/psj/catkin_ws/devel/lib/libsensor_odometry.so"
+  "/home/ubuntu/catkin_ws/devel/lib/libsensor_odometry.pdb"
+  "/home/ubuntu/catkin_ws/devel/lib/libsensor_odometry.so"
 )
 
 # Per-language clean rules from dependency scanning.

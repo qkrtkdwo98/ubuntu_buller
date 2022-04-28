@@ -1,10 +1,65 @@
 <launch>
+  
+  <group ns="buller2">
+    <remap from="/tf" to="/buller2/tf"/>
+    <remap from="/tf_static" to="/buller2/tf_static"/>
+    <remap from="/imu/data" to="/buller2/imu/data"/>
+    <remap from="/diagnostics" to="/buller2/diagnostics"/>
+    <remap from="/encoder_pulse" to="/buller2/encoder_pulse"/>
+  <!-- buller model -->
+  <arg name="model" default="$(find buller_description)/urdf/buller.urdf"/>
+  <arg name="gui" default="true" />
+  <arg name="rvizconfig" default="$(find buller_description)/rviz/urdf.rviz" />
+
+  <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
+  <param name="use_gui" value="$(arg gui)"/>
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+  <!-- kobuki control option 
+  <include file="$(find kobuki_navigation)/launch/velocity_smoother.launch.xml"/>
+  <include file="$(find kobuki_navigation)/launch/safety_controller.launch.xml"/> 
+  -->
+
   <!-- MOTOR -->
-   <node pkg="rosserial_python" type="serial_node.py" args="/dev/ttyUSB0" name="serial_node"/>
+   <node pkg="rosserial_python" type="serial_node.py" args="/dev/ttyUSB1" name="serial_node"/>
+  <!-- LiDAR -->
+   <include file="$(find rplidar_ros)/launch/rplidar.launch">      
+   </include>
+  <!-- IMU -->
+   <node pkg="myahrs_driver" type="myahrs_driver" name="myahrs_driver">
+    		<param name="port" value="/dev/ttyACM0" />
+    		<param name="baud_rate" value="115200" />
+   </node>
+  
+  <!-- Map server -->
+  <arg name="map_file" default="$(find buller_nav)/maps/floor2.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)">
+  </node>
+
+  <!-- AMCL -->
+  <include file="$(find buller_nav)/launch/amcl.launch.xml"/>
   
   <!-- tf & odom pkg -->
    <node pkg="buller_tf" type="tf_broadcaster" name="buller_tf_publisher"/>
    <node pkg="buller_odom_publisher" type="buller_odom_publisher_node" name="buller_odom_publisher"/>
 
-</launch> 
+  <!-- move_base -->  
+  <!--arg name="cmd_vel_topic" default="/mobile_base/commands/velocity" /-->
+  <arg name="odom_topic" default="odom" />
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find buller_nav)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find buller_nav)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find buller_nav)/param/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find buller_nav)/param/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find buller_nav)/param/base_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find buller_nav)/param/move_base_params.yaml" command="load" />
+    <!--remap from="cmd_vel" to="$(arg cmd_vel_topic)"/-->
+    <remap from="odom" to="$(arg odom_topic)"/>
+  </node>
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find buller_nav)/rviz/buller_nav.rviz" />
+
+  </group>
+</launch>
 

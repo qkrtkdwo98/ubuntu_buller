@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o"
-  "/home/psj/catkin_ws/devel/lib/buller_tf/tf_broadcaster.pdb"
-  "/home/psj/catkin_ws/devel/lib/buller_tf/tf_broadcaster"
+  "/home/ubuntu/catkin_ws/devel/lib/buller_tf/tf_broadcaster.pdb"
+  "/home/ubuntu/catkin_ws/devel/lib/buller_tf/tf_broadcaster"
 )
 
 # Per-language clean rules from dependency scanning.

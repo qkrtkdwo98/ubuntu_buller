@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/psj/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/psj/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/catkin_ws/build
 
 # Utility rule file for tf2_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ buller_odom_publisher/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build: tf2_m
 .PHONY : buller_odom_publisher/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
 
 buller_odom_publisher/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean:
-	cd /home/psj/catkin_ws/build/buller_odom_publisher && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/ubuntu/catkin_ws/build/buller_odom_publisher && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : buller_odom_publisher/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean
 
 buller_odom_publisher/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/depend:
-	cd /home/psj/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/psj/catkin_ws/src /home/psj/catkin_ws/src/buller_odom_publisher /home/psj/catkin_ws/build /home/psj/catkin_ws/build/buller_odom_publisher /home/psj/catkin_ws/build/buller_odom_publisher/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/catkin_ws/src /home/ubuntu/catkin_ws/src/buller_odom_publisher /home/ubuntu/catkin_ws/build /home/ubuntu/catkin_ws/build/buller_odom_publisher /home/ubuntu/catkin_ws/build/buller_odom_publisher/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : buller_odom_publisher/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/depend
 

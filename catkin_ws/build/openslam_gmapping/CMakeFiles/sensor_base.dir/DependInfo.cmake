@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/psj/catkin_ws/src/openslam_gmapping/sensor/sensor_base/sensor.cpp" "/home/psj/catkin_ws/build/openslam_gmapping/CMakeFiles/sensor_base.dir/sensor/sensor_base/sensor.cpp.o"
-  "/home/psj/catkin_ws/src/openslam_gmapping/sensor/sensor_base/sensorreading.cpp" "/home/psj/catkin_ws/build/openslam_gmapping/CMakeFiles/sensor_base.dir/sensor/sensor_base/sensorreading.cpp.o"
+  "/home/ubuntu/catkin_ws/src/openslam_gmapping/sensor/sensor_base/sensor.cpp" "/home/ubuntu/catkin_ws/build/openslam_gmapping/CMakeFiles/sensor_base.dir/sensor/sensor_base/sensor.cpp.o"
+  "/home/ubuntu/catkin_ws/src/openslam_gmapping/sensor/sensor_base/sensorreading.cpp" "/home/ubuntu/catkin_ws/build/openslam_gmapping/CMakeFiles/sensor_base.dir/sensor/sensor_base/sensorreading.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,7 +16,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/psj/catkin_ws/src/openslam_gmapping/include"
+  "/home/ubuntu/catkin_ws/src/openslam_gmapping/include"
   )
 
 # Targets to which this target links.

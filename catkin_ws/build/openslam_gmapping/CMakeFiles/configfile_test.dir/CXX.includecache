@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/psj/catkin_ws/src/openslam_gmapping/configfile/configfile_test.cpp
+/home/ubuntu/catkin_ws/src/openslam_gmapping/configfile/configfile_test.cpp
 cstdlib
 -
 iostream
 -
 gmapping/configfile/configfile.h
-/home/psj/catkin_ws/src/openslam_gmapping/configfile/gmapping/configfile/configfile.h
+/home/ubuntu/catkin_ws/src/openslam_gmapping/configfile/gmapping/configfile/configfile.h
 
-/home/psj/catkin_ws/src/openslam_gmapping/include/gmapping/configfile/configfile.h
+/home/ubuntu/catkin_ws/src/openslam_gmapping/include/gmapping/configfile/configfile.h
 iostream
 -
 string

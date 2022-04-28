@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/psj/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/psj/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/catkin_ws/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ openslam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_em
 .PHONY : openslam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 openslam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/psj/catkin_ws/build/openslam_gmapping && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/ubuntu/catkin_ws/build/openslam_gmapping && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : openslam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 openslam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/psj/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/psj/catkin_ws/src /home/psj/catkin_ws/src/openslam_gmapping /home/psj/catkin_ws/build /home/psj/catkin_ws/build/openslam_gmapping /home/psj/catkin_ws/build/openslam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/catkin_ws/src /home/ubuntu/catkin_ws/src/openslam_gmapping /home/ubuntu/catkin_ws/build /home/ubuntu/catkin_ws/build/openslam_gmapping /home/ubuntu/catkin_ws/build/openslam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openslam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

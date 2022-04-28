@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/scanstudio2carmen.dir/log/scanstudio2carmen.cpp.o"
-  "/home/psj/catkin_ws/devel/lib/openslam_gmapping/scanstudio2carmen.pdb"
-  "/home/psj/catkin_ws/devel/lib/openslam_gmapping/scanstudio2carmen"
+  "/home/ubuntu/catkin_ws/devel/lib/openslam_gmapping/scanstudio2carmen.pdb"
+  "/home/ubuntu/catkin_ws/devel/lib/openslam_gmapping/scanstudio2carmen"
 )
 
 # Per-language clean rules from dependency scanning.

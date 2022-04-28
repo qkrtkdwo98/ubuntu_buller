@@ -74,17 +74,17 @@ void KeyboardPublisher::keyLoop() {
                 switch(c) { //depending on which arrow key pressed, angular/linear assigned
                         case 'w':
                                 ROS_DEBUG("straight");
-                                linear = 0.25;
+                                linear = 0.1;
                                 changed = true;
                                 break;
                         case 'a':
                                 ROS_DEBUG("left");
-                                angular = -1.0;
+                                angular = 0.2;
                                 changed = true;
                                 break;
                         case 'd':
                                 ROS_DEBUG("right");
-                                angular = 1.0;
+                                angular = -0.2;
                                 changed = true;
                                 break;
                         case 's':
@@ -94,11 +94,11 @@ void KeyboardPublisher::keyLoop() {
                                 break;
 			case 'x':
                                 ROS_DEBUG("back");
-                                linear = -0.25;
+                                linear = -0.1;
                                 changed = true;
                                 break;
                 }
-		//ROS_INFO("check");
+		ROS_INFO("check");
                 geometry_msgs::Twist msg; //twist object to be published
                 msg.angular.z = angular; //assigning angular to the twist
                 msg.linear.x = linear;  //assigning linear to the twist

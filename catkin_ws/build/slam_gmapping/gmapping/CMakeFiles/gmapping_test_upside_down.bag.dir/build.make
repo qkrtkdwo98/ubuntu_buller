@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/psj/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/psj/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/catkin_ws/build
 
 # Utility rule file for gmapping_test_upside_down.bag.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/psj/catkin_ws/build
 include slam_gmapping/gmapping/CMakeFiles/gmapping_test_upside_down.bag.dir/progress.make
 
 slam_gmapping/gmapping/CMakeFiles/gmapping_test_upside_down.bag:
-	cd /home/psj/catkin_ws/build/slam_gmapping/gmapping && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/download_checkmd5.py https://github.com/ros-perception/slam_gmapping_test_data/raw/master/test_upside_down.bag /home/psj/catkin_ws/devel/share/gmapping/test/test_upside_down.bag 3b026a2144ec14f3fdf218b5c7077d54 --ignore-error
+	cd /home/ubuntu/catkin_ws/build/slam_gmapping/gmapping && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/download_checkmd5.py https://github.com/ros-perception/slam_gmapping_test_data/raw/master/test_upside_down.bag /home/ubuntu/catkin_ws/devel/share/gmapping/test/test_upside_down.bag 3b026a2144ec14f3fdf218b5c7077d54 --ignore-error
 
 gmapping_test_upside_down.bag: slam_gmapping/gmapping/CMakeFiles/gmapping_test_upside_down.bag
 gmapping_test_upside_down.bag: slam_gmapping/gmapping/CMakeFiles/gmapping_test_upside_down.bag.dir/build.make
@@ -67,10 +67,10 @@ slam_gmapping/gmapping/CMakeFiles/gmapping_test_upside_down.bag.dir/build: gmapp
 .PHONY : slam_gmapping/gmapping/CMakeFiles/gmapping_test_upside_down.bag.dir/build
 
 slam_gmapping/gmapping/CMakeFiles/gmapping_test_upside_down.bag.dir/clean:
-	cd /home/psj/catkin_ws/build/slam_gmapping/gmapping && $(CMAKE_COMMAND) -P CMakeFiles/gmapping_test_upside_down.bag.dir/cmake_clean.cmake
+	cd /home/ubuntu/catkin_ws/build/slam_gmapping/gmapping && $(CMAKE_COMMAND) -P CMakeFiles/gmapping_test_upside_down.bag.dir/cmake_clean.cmake
 .PHONY : slam_gmapping/gmapping/CMakeFiles/gmapping_test_upside_down.bag.dir/clean
 
 slam_gmapping/gmapping/CMakeFiles/gmapping_test_upside_down.bag.dir/depend:
-	cd /home/psj/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/psj/catkin_ws/src /home/psj/catkin_ws/src/slam_gmapping/gmapping /home/psj/catkin_ws/build /home/psj/catkin_ws/build/slam_gmapping/gmapping /home/psj/catkin_ws/build/slam_gmapping/gmapping/CMakeFiles/gmapping_test_upside_down.bag.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/catkin_ws/src /home/ubuntu/catkin_ws/src/slam_gmapping/gmapping /home/ubuntu/catkin_ws/build /home/ubuntu/catkin_ws/build/slam_gmapping/gmapping /home/ubuntu/catkin_ws/build/slam_gmapping/gmapping/CMakeFiles/gmapping_test_upside_down.bag.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : slam_gmapping/gmapping/CMakeFiles/gmapping_test_upside_down.bag.dir/depend
 

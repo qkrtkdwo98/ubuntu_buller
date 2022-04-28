@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/psj/catkin_ws/src/rplidar_ros/src/client.cpp
+/home/ubuntu/catkin_ws/src/rplidar_ros/src/client.cpp
 ros/ros.h
-/home/psj/catkin_ws/src/rplidar_ros/src/ros/ros.h
+/home/ubuntu/catkin_ws/src/rplidar_ros/src/ros/ros.h
 sensor_msgs/LaserScan.h
-/home/psj/catkin_ws/src/rplidar_ros/src/sensor_msgs/LaserScan.h
+/home/ubuntu/catkin_ws/src/rplidar_ros/src/sensor_msgs/LaserScan.h
 
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h

@@ -31,7 +31,7 @@
   <link name="base_link">
     <visual>
       <geometry>
-        <box size="0.24 0.335 0.47"/>
+        <cylinder length="0.562" radius="0.15"/>
       </geometry>
       <material name="blue"/>
     </visual>
@@ -50,7 +50,7 @@
   <joint name="base_to_right_wheel" type="fixed">
     <parent link="base_link"/>
     <child link="right_wheel"/>
-    <origin xyz="-0.09 0.2005 -0.235"/>
+    <origin xyz="-0.09 0.10 -0.281"/>
   </joint>
  
   <link name="left_wheel">
@@ -58,7 +58,7 @@
       <geometry>
         <cylinder length="0.06" radius="0.06"/>
       </geometry>
-      <origin rpy="1.57075 0 0" xyz="0 0 -0"/>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
       <material name="black"/>
     </visual>
   </link>
@@ -66,7 +66,7 @@
   <joint name="base_to_left_wheel" type="fixed">
     <parent link="base_link"/>
     <child link="left_wheel"/>
-    <origin xyz="-0.09 -0.2005 -0.235"/>
+    <origin xyz="-0.09 -0.10 -0.281"/>
   </joint>
 
 </robot>

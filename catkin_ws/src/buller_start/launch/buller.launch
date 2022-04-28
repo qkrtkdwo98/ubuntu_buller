@@ -1,12 +1,12 @@
 <launch>
 	<!-- MOTOR -->
-	<node pkg="rosserial_python" type="serial_node.py" args="/dev/ttyACM0" name="serial_node"/>
+	<node pkg="rosserial_python" type="serial_node.py" args="/dev/ttyUSB1" name="serial_node"/>
 	<!-- LiDAR -->
    	<include file="$(find rplidar_ros)/launch/rplidar.launch">      
    	</include>
    	<!-- IMU -->
 	<node pkg="myahrs_driver" type="myahrs_driver" name="myahrs_driver">
-    		<param name="port" value="/dev/ttyACM1" />
+    		<param name="port" value="/dev/ttyACM0" />
     		<param name="baud_rate" value="115200" />
   	</node>
    	<!--include file="$(find myahrs_driver)/launch/myahrs_driver.launch" >         
